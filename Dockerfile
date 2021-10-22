@@ -3,8 +3,7 @@ FROM ubuntu:18.04
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-COPY requirements.txt .
-RUN python3 -m pip install --no-cache-dir -r requirements.txt
+
 
 COPY extract /usr/local/bin
 COPY pextract /usr/local/bin
